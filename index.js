@@ -1,6 +1,6 @@
 import cors from "cors"
 import express from "express"
-import chat from "./routes/chat"
+import chat from "./routes/chat.js"
 
 const app = express()
 app.use(chat)
