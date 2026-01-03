@@ -19,7 +19,7 @@ chat.post("/chat", async (req, res) => {
     })
     res.status(200).json({ statusCode: 200, message: respo.text})
   } catch(error) {
-    res.status(404).json({ statusCode: 404, message: error.message })
+    res.status(429).json(error.message)
   }
 })
 export default chat
